@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#12B36E</color>
+    <color name="colorPrimaryDark">#12B36E</color>
+    <color name="colorAccent">#FF007B</color>
+
+    <color name="sialaColorFirst">#FF007B</color>
+    <color name="sialaColorSecond">#12B36E</color>
+    <color name="sialaColorThird">#0DFF98</color>
 </resources>
