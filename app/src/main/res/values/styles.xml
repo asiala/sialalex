@@ -6,6 +6,14 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/agencyr</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">@color/sialaColorFourth</item>
+        <item name="android:textColor">@color/sialaColorThird</item>
+        <item name="android:textColorPrimary">@color/sialaColorFirst</item>
+        <item name="android:fontFamily">@font/agencyr</item>
     </style>
 
 </resources>

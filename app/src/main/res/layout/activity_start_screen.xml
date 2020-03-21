@@ -1,43 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".StartScreen">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/invoiceSum"
-        android:textSize="25sp"
-        android:layout_weight="1"
-        android:layout_margin="15sp"
-        android:padding="10sp"
-        android:textColor="@color/sialaColorFirst" />
-
-    <ListView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="3"
-        android:id="@+id/refuelList"
-        android:layout_below="@id/invoiceSum"
-        android:dividerHeight="1sp"
-        android:divider="@color/sialaColorFirst"
-        android:layout_margin="15sp"/>
-
-    <com.getbase.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/addRefuel"
-        app:fab_colorNormal="@color/sialaColorFirst"
-        android:layout_margin="15sp"
-        app:fab_size="normal"
-        app:fab_icon="@drawable/plus_icon_green"/>
+        android:orientation="horizontal"
+        android:layout_margin="20sp"
+        android:onClick="startRefuelScreen">
 
-</RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="18sp"
+            android:layout_weight="2"
+            android:onClick="startRefuelScreen"
+            android:src="@drawable/icon_refuelstation" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tank Rechnungen"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:layout_marginLeft="2sp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/agencyr"
+            android:textColor="@color/sialaColorFirst"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="20sp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="18sp"
+            android:layout_weight="2"
+            android:onClick="startRefuelScreen"
+            android:src="@drawable/icon_clock" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Wecker"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:layout_marginLeft="10sp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/agencyr"
+            android:textColor="@color/sialaColorFirst"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="20sp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="18sp"
+            android:layout_weight="2"
+            android:onClick="startRefuelScreen"
+            android:src="@drawable/icon_notes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Notizen"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:layout_marginLeft="10sp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/agencyr"
+            android:textColor="@color/sialaColorFirst"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="20sp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="18sp"
+            android:layout_weight="2"
+            android:onClick="startRefuelScreen"
+            android:src="@drawable/icon_options" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Einstellungen"
+            android:layout_weight="1"
+            android:textSize="28sp"
+            android:layout_marginLeft="10sp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/agencyr"
+            android:textColor="@color/sialaColorFirst"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

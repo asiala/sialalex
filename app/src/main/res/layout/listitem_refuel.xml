@@ -15,7 +15,7 @@
         android:gravity="center"
         android:id="@+id/invoice"
         android:textSize="28sp"
-        android:textColor="@color/sialaColorSecond"
+        android:textColor="@color/sialaColorThird"
         android:layout_gravity="center_vertical"/>
 
     <LinearLayout

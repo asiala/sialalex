@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import at.siala.sialalex.Objects.Refuel;
 import at.siala.sialalex.R;
 
-public class RefuelAdapter extends ArrayAdapter<Refuel> implements View.OnClickListener
+public class RefuelAdapter extends ArrayAdapter<Refuel> //implements View.OnClickListener
 {
     private ArrayList<Refuel> refuelData;
     Context refuelContext;
@@ -26,7 +26,7 @@ public class RefuelAdapter extends ArrayAdapter<Refuel> implements View.OnClickL
         this.refuelContext = context;
     }
 
-    @Override
+    /*@Override
     public void onClick(View v) {
         int position = (Integer) v.getTag();
         Object object = getItem(position);
@@ -38,7 +38,7 @@ public class RefuelAdapter extends ArrayAdapter<Refuel> implements View.OnClickL
                 //Auswählen welches Item angeklickt wurde und anschließend was passiert
                 break;
         }
-    }
+    }*/
 
 
     @Override
@@ -53,7 +53,7 @@ public class RefuelAdapter extends ArrayAdapter<Refuel> implements View.OnClickL
         Refuel currentRefuel = refuelData.get(position);
 
         TextView invoice = (TextView) refuelItem.findViewById(R.id.invoice);
-        invoice.setText(currentRefuel.getInvoice_amount()+"€");
+        invoice.setText(String.format("%.2f", currentRefuel.getInvoice_amount())+"€");
 
         TextView date = (TextView) refuelItem.findViewById(R.id.date);
         date.setText(currentRefuel.getDate());

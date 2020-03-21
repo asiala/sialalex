@@ -9,12 +9,13 @@
         android:layout_height="wrap_content"
         android:hint="Rechnungsbetrag"
         android:id="@+id/invoiceEditText"
-        android:textColor="@color/sialaColorFirst"/>
+        android:textColor="@color/sialaColorFirst"
+        android:inputType="numberDecimal" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tanstelle"
+        android:hint="Tankstelle"
         android:id="@+id/locationEditText"
         android:textColor="@color/sialaColorFirst"/>
 
@@ -22,8 +23,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="19.03.2020"
+        android:hint="01.01.2020"
         android:id="@+id/dateEditText"
-        android:textColor="@color/sialaColorFirst"/>
+        android:textColor="@color/sialaColorFirst"
+        android:inputType="date"/>
 
 </LinearLayout>
