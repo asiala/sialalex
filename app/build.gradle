@@ -31,4 +31,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.getbase:floatingactionbutton:1.10.1'
     implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.github.AnyChart:AnyChart-Android:0.0.3'
+    implementation 'com.dropbox.core:dropbox-core-sdk:3.1.3'
 }

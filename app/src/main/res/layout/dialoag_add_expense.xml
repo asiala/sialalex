@@ -7,17 +7,21 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Rechnungsbetrag"
-        android:id="@+id/invoiceEditText"
+        android:hint="Betrag"
+        android:id="@+id/amountEditText"
         android:textColor="@color/sialaColorFirst"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:layout_margin="5sp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tankstelle"
-        android:id="@+id/locationEditText"
-        android:textColor="@color/sialaColorFirst"/>
+        android:hint="Beschreibung"
+        android:id="@+id/descriptionEditText"
+        android:textColor="@color/sialaColorFirst"
+        android:textSize="20sp"
+        android:layout_margin="5sp"/>
 
 
     <EditText
@@ -26,6 +30,13 @@
         android:hint="01.01.2020"
         android:id="@+id/dateEditText"
         android:textColor="@color/sialaColorFirst"
-        android:inputType="date"/>
+        android:inputType="date"
+        android:textSize="20sp"
+        android:layout_margin="5sp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categorieSpinner"></Spinner>
 
 </LinearLayout>

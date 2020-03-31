@@ -15,7 +15,7 @@ public class StartScreen extends AppCompatActivity
 
     public void startRefuelScreen(View view)
     {
-        Intent refuelScreenIntent = new Intent(this, RefuelScreen.class);
+        Intent refuelScreenIntent = new Intent(this, ExpenseScreen.class);
         this.startActivity(refuelScreenIntent);
     }
 }

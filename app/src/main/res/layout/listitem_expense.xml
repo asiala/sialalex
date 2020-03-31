@@ -25,18 +25,39 @@
         android:layout_weight="1"
         android:layout_marginLeft="10sp">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/date"
-            android:text="24.12.2020"
-            android:textColor="@color/sialaColorSecond"
-            android:textSize="20sp"/>
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:text="24.12.2020"
+                android:textColor="@color/sialaColorSecond"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/categorie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="Tankstelle"
+                android:textSize="18sp"
+                android:textColor="@color/sialaColorThird"/>
+
+        </LinearLayout>
+
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/location"
+            android:id="@+id/description"
             android:text="AVIA Zell an der Pram"
             android:textColor="@color/sialaColorSecond"
             android:textSize="20sp"/>

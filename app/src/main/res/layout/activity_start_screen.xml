@@ -18,15 +18,15 @@
             android:layout_margin="18sp"
             android:layout_weight="2"
             android:onClick="startRefuelScreen"
-            android:src="@drawable/icon_refuelstation" />
+            android:src="@drawable/icon_diagram" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Tank Rechnungen"
+            android:text="Ausgaben"
             android:layout_weight="1"
             android:textSize="28sp"
-            android:layout_marginLeft="2sp"
+            android:layout_marginLeft="10sp"
             android:gravity="center_vertical"
             android:fontFamily="@font/agencyr"
             android:textColor="@color/sialaColorFirst"/>
